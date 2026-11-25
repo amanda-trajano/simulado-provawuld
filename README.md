@@ -36,8 +36,8 @@ Pré-requisitos: Git e GitHub CLI (`gh`) instalados e login feito com `gh auth l
 
 ```bash
 # 1. Fazer o fork e clonar (só na primeira vez)
-gh repo fork DONO_DO_REPO/simulado-prova-git --clone
-cd simulado-prova-git
+gh repo fork amanda-trajano/simulado-provawuld --clone
+cd simulado-provawuld
 
 # 1b. Se já tinha clonado antes, só atualize
 git pull upstream main
@@ -57,7 +57,7 @@ git commit -m "Resolve desafio - matrícula 20231234"
 git push origin main
 
 # 6. Abrir o Pull Request
-gh pr create --repo DONO_DO_REPO/simulado-prova-git \
+gh pr create --repo amanda-trajano/simulado-provawuld \
   --head SEU_USUARIO:main --base main \
   --title "[PROVA] 20231234 - Seu Nome Completo"
 ```
