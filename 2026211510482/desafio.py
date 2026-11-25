@@ -15,3 +15,15 @@
 
 # Escreva sua resposta abaixo:
 
+def situacao_aluno(n1, n2, n3):
+    media = (n1 + n2 + n3) / 3
+    if media >= 7:
+        return "Aprovado"
+    elif media >= 4:
+        return "Recuperação"
+    else:
+        return "Reprovado"
+n1 = float(input("Digite a primeira nota: "))
+n2 = float(input("Digite a segunda nota: "))
+n3 = float(input("Digite a terceira nota: "))
+print(f"Média: {((n1 + n2 + n3) / 3):.2f} - {situacao_aluno(n1, n2, n3)}")
