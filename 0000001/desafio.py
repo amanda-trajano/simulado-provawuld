@@ -1,5 +1,5 @@
 # ============================================================
-# DESAFIO PYTHON - ALUNO 4
+# DESAFIO PYTHON - ALUNO 5
 # ------------------------------------------------------------
 # Crie uma função chamada total_compra(precos) que:
 #   1. Receba uma lista de preços (float).
@@ -14,4 +14,19 @@
 # ============================================================
 
 # Escreva sua resposta abaixo:
+# 
+def total_compra(precos):
+    total = sum(precos)
 
+    if total > 100:
+        total *= 0.90  # Aplica 10% de desconto
+
+    return total
+
+
+# Testando a função
+precos = [35.90, 42.50, 29.99]
+
+resultado = total_compra(precos)
+
+print(f"Total da compra: R$ {resultado:.2f}")
