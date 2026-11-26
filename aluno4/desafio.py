@@ -15,3 +15,21 @@
 
 # Escreva sua resposta abaixo:
 
+def total_compra(precos):
+    total = sum(precos)
+
+    if total > 100:
+        total = total * 0.90
+
+    return total
+
+
+precos = []
+
+for i in range(3):
+    preco = float(input(f"Digite o preço do produto {i+1}: R$ "))
+    precos.append(preco)
+
+resultado = total_compra(precos)
+
+print(f"\nTotal a pagar: R$ {resultado:.2f}")
